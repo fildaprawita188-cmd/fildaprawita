@@ -37,7 +37,7 @@ function displayContacts() {
 function getLastId() {
   function getId(dataContacts) {
     // STEP 1: Cek apakah dataContacts kosong?
-    if (dataContacts.length ===0) {
+    if (dataContacts.length === 0) {
       return 1; // jika kosong, kembalikan ID 1 sebagai ID pertama
     }
 
@@ -45,7 +45,7 @@ function getLastId() {
    const indexTerakhir = dataContacts.length -1;
 
    // STEP 3: Amnbil object kontak yang paling terakhir
-   const idBaru = kontakTerakhir.id = dataContact[indexTerakhir];
+   const kontakTerakhir = dataContact[indexTerakhir];
 
    // STEP 4: Ambil ID-nya, lalu tambah 1
    const idBaru = kontak Terakhir.id + 1;
@@ -54,7 +54,7 @@ function getLastId() {
   }  
 }
 
-function addContact(fullName, pnome, email, location) {
+function addContact(fullName, phone, email, location) {
   dataContacts.push({
     id: getLastId(),
     fullName: fullName,
@@ -69,7 +69,7 @@ function searchContacts(keyword) {
     (filteredContact) => filteredContact.fullName == keyword
   );
 
-  for (conts contact of filteredContacts) {
+  for (const contact of filteredContacts) {
     console.log(`
         🆔 : $(contact.id)
         👩 : $(contact.fullName)
@@ -93,4 +93,5 @@ addContact("Rano Agustino", 6281234567890, "rano@example.com", "Jakarta");
 addContact("Rano Agustini", 6281234567890, "rano@example.com", "Jakarta");
 // displayContacts();
 searchContacts("Rano Agustino");
+
 
