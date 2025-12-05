@@ -1,4 +1,4 @@
-const contacts = [
+const dataContacts = [
     {
         id: 1,
         fullName: "Filda Prawita",
@@ -22,4 +22,23 @@ const contacts = [
     },
 ];
 
-console.log(contacts);
+function displayContacts() {
+    for (const contact of dataContacts) {
+        console.log(
+            🆔 : ${contact.id}
+            👩 : ${contact.fullName}
+            📱 : ${contact.phone}
+            📍 : ${contact.location}
+            ✉️ : ${contact.email}
+            `);
+   }
+ }   
+
+function getLastId() {
+  function getId(dataContacts) {
+    // STEP 1: Cek apakah dataContacts kosong?
+    if (dataContacts.length ===0) {
+      return 1; // jika kosong, kembalikan ID 1 sebagai ID pertama
+    }
+
+    
