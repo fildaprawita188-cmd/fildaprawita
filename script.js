@@ -30,6 +30,7 @@ function displayContacts() {
             📱 : ${contact.phone}
             📍 : ${contact.location}
             ✉️ : ${contact.email}
+        
             `);
    }
  }   
@@ -93,5 +94,6 @@ addContact("Rano Agustino", 6281234567890, "rano@example.com", "Jakarta");
 addContact("Rano Agustini", 6281234567890, "rano@example.com", "Jakarta");
 // displayContacts();
 searchContacts("Rano Agustino");
+
 
 
