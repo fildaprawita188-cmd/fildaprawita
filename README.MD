@@ -1,4 +1,6 @@
 # Address Book
+Proyek sederhana berbasis web untuk menyimpan dan mengelola daftar kontak
+dibuat menggunakan HTML, CSS, dan Tailwind CSS dengan tampilan yang mudah digunakan
 
 A simple address book application to store and manage contact information.
 
